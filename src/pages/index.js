@@ -8,7 +8,7 @@ class Home extends Component {
     return (
       <div>
         <Header />
-        Welcome
+        Welcome to this site.
         <Footer />
       </div>
     )
