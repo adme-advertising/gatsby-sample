@@ -4,7 +4,9 @@ import Header from '../components/layouts/Header'
 
 class Home extends Component {
   render() {
-      return <div>Hi</div>
+      return (
+      <div><Header />Welcome</div>
+      )
   }
 }
 
