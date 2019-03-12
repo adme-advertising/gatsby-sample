@@ -15,6 +15,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "gatsby": "^2.1.29",
+    "gatsby-cli": "^2.4.15",
     "gatsby-source-wordpress": "^3.0.44",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
