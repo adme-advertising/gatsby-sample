@@ -1,12 +1,17 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
-import Header from '../components/layouts/Header'
+import Header from "../components/layouts/Header"
+import Footer from "../components/layouts/Footer"
 
 class Home extends Component {
   render() {
-      return (
-      <div><Header />Welcome</div>
-      )
+    return (
+      <div>
+        <Header />
+        Welcome
+        <Footer />
+      </div>
+    )
   }
 }
 
