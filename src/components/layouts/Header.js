@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "gatsby"
 import wordpress from "../../api/wordpress";
 
 class Header extends Component {
@@ -18,7 +19,7 @@ class Header extends Component {
           {this.state.navItems.map(item => {
             return (
               <li key={item.acf.name}>
-                <a href={item.acf.link}>{item.acf.name}</a>
+                <Link to={item.acf.link}>{item.acf.name}</Link>
               </li>
             );
           })}
