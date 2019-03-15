@@ -20,6 +20,8 @@
     "gatsby-source-wordpress": "^3.0.44",
     "graphql": "^14.1.1",
     "jquery": "^3.3.1",
+    "jsdom": "^14.0.0",
+    "jsdom-global": "^3.0.2",
     "popper.js": "^1.14.7",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
