@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import UIkit from "uikit"
+// import UIkit from "uikit"
 import axios from "axios"
 import Header from "../components/layouts/Header"
 import Footer from "../components/layouts/Footer"
-import "../../node_modules/uikit/dist/css/uikit.min.css"
+// import "../../node_modules/uikit/dist/css/uikit.min.css"
 import "./page.css"
 
 class Page extends React.Component {
@@ -33,7 +33,7 @@ class Page extends React.Component {
     document
       .getElementById(`gform_${this.state.formID}`)
       .addEventListener("submit", e => {
-        UIkit.modal("#spin", { stack: true, center: true }).show()
+        // UIkit.modal("#spin", { stack: true, center: true }).show()
         const formJSON = {}
         e.preventDefault()
         const inputs = document.getElementsByClassName("input_field")
@@ -66,9 +66,9 @@ class Page extends React.Component {
             let textnode = document.createTextNode(
               "Thank you for submitting this form, we will be with you shortly."
             )
-            UIkit.modal.alert(
-              "<p>Thank you for submitting this form, we will be with you shortly.</p>"
-            )
+            // UIkit.modal.alert(
+            //   "<p>Thank you for submitting this form, we will be with you shortly.</p>"
+            // )
             // node.appendChild(textnode)
             // parentDiv.appendChild(node)
             // superParentDiv.appendChild(parentDiv)
@@ -101,14 +101,14 @@ class Page extends React.Component {
               parentDiv.appendChild(node)
             })
 
-            UIkit.modal
-              .alert(
-                "<p>There were errors with your submission, please correct these errors.</p>"
-              )
-              .then(() => {
-                positionalArray[0].scrollIntoView(true)
-                positionalArray[0].children[1].children[0].focus()
-              })
+            // UIkit.modal
+            //   .alert(
+            //     "<p>There were errors with your submission, please correct these errors.</p>"
+            //   )
+            //   .then(() => {
+            //     positionalArray[0].scrollIntoView(true)
+            //     positionalArray[0].children[1].children[0].focus()
+            //   })
             positionalArray.forEach(ele => {
               ele.classList.add("error_class")
             })
@@ -150,7 +150,7 @@ class Page extends React.Component {
           <div dangerouslySetInnerHTML={{ __html: this.state.content }} />
           <div id="spin" className="uk-flex-top" uk-modal="bg-close: false">
             <div className="uk-light uk-modal-dialog uk-modal-body spinner-transparent uk-margin-auto-vertical uk-flex uk-flex-center">
-              <span uk-spinner="ratio: 5"></span>
+              {/* <span uk-spinner="ratio: 5"></span> */}
             </div>
           </div>
         </div>
