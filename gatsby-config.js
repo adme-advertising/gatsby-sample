@@ -32,7 +32,7 @@ module.exports = {
           jwt_pass: '5ada2uk83m89wnr',
           jwt_base_path: "/jwt-auth/v1/token",
         },
-        excludedRoutes: ["**/media"],
+        excludedRoutes: ["**/media","**/posts"],
       },
     },
   ],

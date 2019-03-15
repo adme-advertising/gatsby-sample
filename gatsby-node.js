@@ -21,14 +21,12 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             id
             title
-            slug
-            status
-            template
-            slug
             content
+            slug
           }
         }
       }
+    }
   `)
 
   // Check for any errors
